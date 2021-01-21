@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:clickable="true"
+	app:cardCornerRadius="10dp"
+	app:cardElevation="3dp"
+	app:cardUseCompatPadding="true"
+	app:cardBackgroundColor="@android:color/white">
+
+	<LinearLayout
+		android:layout_height="match_parent"
+		android:layout_width="match_parent"
+		android:orientation="vertical"
+		android:gravity="center">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="horizontal"
+			android:gravity="center_horizontal|center_vertical">
+
+			<RelativeLayout
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:layout_weight="1"
+				android:padding="8dp"
+				android:id="@+id/up_layout"
+				android:gravity="center">
+
+				<TextView
+					android:id="@+id/title"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:maxLines="1"
+					android:paddingBottom="8dp"
+					android:textColor="@android:color/black"
+					android:textSize="25sp"/>
+
+				<TextView
+					android:id="@+id/date"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_alignParentEnd="true"
+					android:textColor="@color/gray"
+					android:textSize="10sp"/>
+
+				<TextView
+					android:id="@+id/description"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/title"
+					android:ellipsize="end"
+					android:maxLines="3"
+					android:textColor="@color/gray"
+					android:textSize="16sp"/>
+
+			</RelativeLayout>
+
+			<ImageView
+				android:layout_margin="20dp"
+				android:background="?android:attr/selectableItemBackgroundBorderless"
+				android:clickable="true"
+				android:id="@+id/img_expand"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/ic_keyboard_arrow_down"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/bot_layout"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:id="@+id/edit"
+				android:foreground="?android:attr/selectableItemBackgroundBorderless"
+				android:clickable="true"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:layout_weight="1"
+				android:scaleType="center"
+				android:src="@drawable/ic_pencil"/>
+
+			<ImageView
+				android:id="@+id/delete"
+				android:foreground="?android:attr/selectableItemBackgroundBorderless"
+				android:clickable="true"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:layout_weight="1"
+				android:scaleType="center"
+				android:src="@drawable/ic_delete"/>
+			
+			<ImageView
+				android:id="@+id/backup"
+				android:foreground="?android:attr/selectableItemBackgroundBorderless"
+				android:clickable="true"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:layout_weight="1"
+				android:scaleType="center"
+				android:src="@drawable/ic_pencil"/>
+
+			<ImageView
+				android:id="@+id/share"
+				android:foreground="?android:attr/selectableItemBackgroundBorderless"
+				android:clickable="true"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:layout_weight="1"
+				android:scaleType="center"
+				android:src="@drawable/ic_delete"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
